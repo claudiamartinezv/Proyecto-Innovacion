@@ -1,0 +1,73 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background-color: #ffffff;
+      padding: 20px;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .ext-widget {
+      width: 250px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      padding: 15px;
+    }
+    .navigation-button {
+      margin-bottom: 10px;
+      padding: 8px 16px;
+      border: none;
+      background-color: #4d8af0;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .ext-widget h2 {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    .emojis {
+      display: flex;
+      justify-content: space-between;
+      font-size: 22px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+    .emojis span {
+      transition: transform 0.2s, filter 0.2s;
+    }
+    .emojis span:hover {
+      transform: scale(1.2);
+      filter: brightness(1.2);
+    }
+    .estado-semana {
+      background-color: #f4f7fb;
+      border-radius: 10px;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    .estado-semana img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .boton {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .btn-azul {
+      background-color: #4d8af0;
+      color: white;
+    }
+    .btn-gris {
+      background-color: #e3e8f0;
+      color: #333;
+    }

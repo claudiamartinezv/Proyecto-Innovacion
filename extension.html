@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Extensión Bienestar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/extension.css">
+  <script src="assets/js/extension.js"></script>
+</head>
+
+<body>
+  <div class="ext-widget">
+    <button class="navigation-button" onclick="irAVersionMovil()">Ir a App</button>
+    <h2>¿Cómo te sientes hoy?</h2>
+    <div class="emojis">
+      <span onclick="seleccionarEstado('Muy mal')">😞</span>
+      <span onclick="seleccionarEstado('Mal')">😟</span>
+      <span onclick="seleccionarEstado('Neutral')">😐</span>
+      <span onclick="seleccionarEstado('Bien')">🙂</span>
+      <span onclick="seleccionarEstado('Muy bien')">😄</span>
+    </div>
+    <div class="estado-semana">
+      <p><strong>Estado de la semana</strong></p>
+      <img src="assets/img/ejemplo.png" alt="Estado gráfico">
+    </div>
+    <button class="boton btn-azul" onclick="mostrarConsejo()">Ver consejo de hoy</button>
+    <button class="boton btn-gris" onclick="activarModoCalma()">Modo calma</button>
+  </div>
+</body>
+</html>

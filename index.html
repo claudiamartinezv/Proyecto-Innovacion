@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>App de Bienestar - Versión Móvil</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/app.css">
+  <script src="assets/js/app.js"></script>
+</head>
+<body>
+  <button class="navigation-button" onclick="irAVersionExtension()">Ir a Extensión</button>
+  <div class="app">
+    
+    <!-- Sección: INICIO -->
+    <div id="seccion-inicio" class="seccion visible">
+      <h1>Hola, Alumno</h1>
+      <h2>¿Cómo te sientes hoy?</h2>
+      <div class="emojis">
+        <span onclick="seleccionarEstado('Muy mal')">😞</span>
+        <span onclick="seleccionarEstado('Mal')">😟</span>
+        <span onclick="seleccionarEstado('Neutral')">😐</span>
+        <span onclick="seleccionarEstado('Bien')">🙂</span>
+        <span onclick="seleccionarEstado('Muy bien')">😄</span>
+      </div>
+      <div class="estado-semana">
+        <h3>Estado de la semana</h3>
+        <img src="assets/img/ejemplo.png" alt="Estado gráfico">
+      </div>
+      <div class="card">
+        <h3>Consejo del día</h3>
+        <p>Empieza el día con intención. <br>Antes de mirar el móvil, piensa en una cosa que quieres lograr hoy.</p>
+      </div>
+      <div class="card">
+        <h3>Notificaciones</h3>
+        <p>Activa tu espacio tranquilo: música lo-fi lista para ti.</p>
+      </div>
+    </div>
+
+    <!-- Sección: DIARIO -->
+    <div id="seccion-diario" class="seccion">
+      <h2>Mi Diario</h2>
+      <p>Escribe aquí cómo te sientes hoy...</p>
+      <textarea rows="6" style="width: 100%; margin-top: 10px; padding: 10px; border-radius: 10px; border: 1px solid #ccc;"></textarea>
+    </div>
+
+    <!-- Sección: MEDITAR -->
+    <div id="seccion-meditar" class="seccion">
+      <h2>Momento de meditación</h2>
+      <p>Respira profundo. Este es tu espacio para calmarte y reenfocarte.</p>
+      <button style="margin-top: 15px; padding: 10px 20px; border: none; background: #9ecffb; border-radius: 10px; cursor: pointer;">Iniciar música lo-fi</button>
+    </div>
+
+    <!-- Menú inferior -->
+    <div class="footer">
+      <div onclick="mostrarSeccion('inicio')"><i>🏠</i><span>Inicio</span></div>
+      <div onclick="mostrarSeccion('diario')"><i>📓</i><span>Diario</span></div>
+      <div onclick="mostrarSeccion('meditar')"><i>🧘</i><span>Meditar</span></div>
+      <div><i>👥</i><span>Comunidad</span></div>
+      <div><i>👤</i><span>Perfil</span></div>
+    </div>
+  </div>
+</body>
+</html>
